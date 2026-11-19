@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Lisière</title>
+    <meta name="description" content="Contactez l'atelier Lisière : formulaire, adresse, horaires et carte.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="evitement" href="#contenu">Aller au contenu</a>
+
+<header class="site-header">
+    <a class="logo" href="index.html">
+        <img src="img/logo-lisiere.svg" alt="Lisière, atelier du bonsaï – retour à l'accueil" width="190" height="52">
+    </a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menu de navigation">
+    <label for="menu-toggle" class="burger">
+        <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisations.html">Réalisations</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="contenu">
+    <section class="section section-intro" aria-labelledby="titre-page">
+        <p class="overline">Contact</p>
+        <h1 id="titre-page">Parlons de vos projets.</h1>
+        <p class="lead">
+            Si
+        </p>
+    </section>
+
+    <section class="section section--nopad-top" aria-label="Formulaire et coordonnées">
+        <div class="contact-grid">
+
+            <div class="contact-form">
+                <h2 id="formulaire">Écrivez-nous</h2>
+                <form class="formulaire" action="mailto:bonjour@lisiere.example" method="post" enctype="text/plain" aria-labelledby="formulaire">
+                    <p class="formulaire-note">Les champs marqués d'un astérisque (*) sont obligatoires.</p>
+
+                    <div class="champ">
+                        <label for="nom">Nom <span aria-hidden="true">*</span></label>
+                        <input type="text" id="nom" name="nom" autocomplete="name" required>
+                    </div>
+
+                    <div class="champ">
+                        <label for="email">Adresse e-mail <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="champ">
+                        <label for="telephone">Téléphone (facultatif)</label>
+                        <input type="tel" id="telephone" name="telephone" autocomplete="tel">
+                    </div>
+
+                    <div class="champ">
+                        <label for="sujet">Votre demande concerne <span aria-hidden="true">*</span></label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">Choisir un sujet</option>
+                            <option value="atelier">Un atelier bonsaï</option>
+                            <option value="pension">La pension pour arbres</option>
+                            <option value="realisation">Une réalisation</option>
+                            <option value="autre">Autre chose</option>
+                        </select>
+                    </div>
+
+                    <div class="champ">
+                        <label for="message">Votre message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="champ champ-checkbox">
+                        <input type="checkbox" id="consentement" name="consentement" required>
+                        <label for="consentement">
+                            J'accepte que ces informations soient utilisées pour répondre à ma demande
+                            (voir la <a class="lien" href="vie-privee.html">politique de vie privée</a>). <span aria-hidden="true">*</span>
+                        </label>
+                    </div>
+
+                    <button class="btn" type="submit">
+                        Envoyer le message
+                        <svg class="btn-icon" aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 8.17 8.17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.4156 7.4156V0.75H0.75M7.4156 0.75L0.75 7.4156" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h2>Nous trouver</h2>
+
+                <div class="contact-block">
+                    <h3>Adresse</h3>
+                    <address>
+                        Atelier Lisière<br>
+                        Rue de l'Atelier 12<br>
+                        1000 Bruxelles, Belgique
+                    </address>
+                </div>
+
+                <div class="contact-block">
+                    <h3>Horaires</h3>
+                    <p>Du mercredi au samedi, de 10 h à 18 h, sur rendez-vous.</p>
+                </div>
+
+                <div class="contact-block">
+                    <h3>Écrire ou appeler</h3>
+                    <a href="mailto:bonjour@lisiere.example">bonjour@lisiere.example</a>
+                    <a href="tel:+3220000000">+32&nbsp;2&nbsp;000&nbsp;00&nbsp;00</a>
+                </div>
+
+                <div class="map">
+                    <iframe title="Carte : emplacement de l'atelier Lisière"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=4.3400%2C50.8450%2C4.3600%2C50.8550&amp;layer=mapnik&amp;marker=50.8500%2C4.3500"
+                            loading="lazy"></iframe>
+                </div>
+                <a class="lien" href="https://www.openstreetmap.org/?mlat=50.8500&amp;mlon=4.3500#map=16/50.8500/4.3500">Agrandir la carte (nouvel onglet)</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div class="footer-marque">
+            <p class="footer-signature">Lisière</p>
+            <p class="footer-message">L'art de laisser le temps agir.</p>
+        </div>
+
+        <nav class="footer-col footer-col--nav" aria-labelledby="footer-titre-nav">
+            <h2 class="footer-titre" id="footer-titre-nav">Explorer</h2>
+            <ul class="footer-liste">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="footer-col footer-col--legal" aria-labelledby="footer-titre-legal">
+            <h2 class="footer-titre" id="footer-titre-legal">Informations</h2>
+            <ul class="footer-liste">
+                <li><a href="mentions-legales.html">Mentions légales</a></li>
+                <li><a href="vie-privee.html">Vie privée</a></li>
+                <li><a href="conditions-generales.html">Conditions générales</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-col footer-col--contact">
+            <h2 class="footer-titre">Nous écrire</h2>
+            <address class="footer-adresse">
+                Atelier Lisière<br>
+                Rue de l'Atelier 12<br>
+                1000 Bruxelles, Belgique
+            </address>
+            <ul class="footer-liste">
+                <li><a href="mailto:bonjour@lisiere.example">bonjour@lisiere.example</a></li>
+                <li><a href="tel:+3220000000">+32&nbsp;2&nbsp;000&nbsp;00&nbsp;00</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-legal">
+        <div class="footer-legal-inner">
+            <p class="footer-legal-info">
+                Lisière SRL &ndash; Entreprise inscrite à la BCE sous le n° 0000.000.000
+                &ndash; TVA BE 0000.000.000 &ndash; RPM Bruxelles (tribunal de l'entreprise
+                francophone de Bruxelles)
+            </p>
+            <p class="footer-copyright">
+                &copy; 2026 Lisière. Tous droits réservés.
+                <a class="footer-top" href="#top">Retour en haut de page</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
