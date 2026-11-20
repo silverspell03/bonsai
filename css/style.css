@@ -337,6 +337,7 @@ ul, ol, dl, figure, fieldset { margin: 0; }
     gap: var(--space-2);
     padding: var(--space-4) 0;
     border-top: 1px solid var(--color-border);
+    list-style: none;
 }
 .liste li:last-child { border-bottom: 1px solid var(--color-border); }
 
